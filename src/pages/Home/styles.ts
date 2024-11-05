@@ -78,23 +78,67 @@ export const TextInfo = styled.section`
   }
 
   a {
-      margin: 0 auto;
-      margin-top: 3.313rem;
-      text-decoration: none;
-      width: 430px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #469743;
-      color: #fff;
-      padding: 15px 15px;
-      border-radius: 50px;
-      font-size: 1.125rem;
-      font-weight: 700;
-      cursor: pointer;
-    }
+    margin: 0 auto;
+    margin-top: 3.313rem;
+    text-decoration: none;
+    width: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #469743;
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
 `;
 
 export const CardContainer = styled.section`
+  padding: 7rem 3rem;
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.688rem;
 
-`
+    img {
+      width: 209px;
+    }
+
+    h3 {
+      color: #fff;
+      font-size: 2.25rem;
+    }
+  }
+
+  section.cards{
+    margin-top: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    ul {
+      margin-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+
+      li{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.7rem;
+        font-size: 12px;
+
+        span.bold{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+`;

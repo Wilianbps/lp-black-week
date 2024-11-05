@@ -10,6 +10,7 @@ export const HeaderContainer = styled.section`
     height: 4.813rem;
     background-color: #9e1617;
     font-size: 1.5rem;
+    padding: 1rem 3rem;
 
     p {
       color: #fff;
