@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 
-
 export const HeaderContainer = styled.section`
   header {
     display: flex;
@@ -37,6 +36,11 @@ export const HeaderContainer = styled.section`
       font-size: 1.125rem;
       font-weight: 700;
       cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      opacity: 0.8;
     }
   }
 `;
@@ -95,6 +99,11 @@ export const Content = styled.section`
       font-size: 1rem;
       font-weight: 700;
       cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      opacity: 0.8;
     }
 
     image {
@@ -104,6 +113,4 @@ export const Content = styled.section`
   }
 `;
 
-export const Fotter = styled.footer`
-
-`;
+export const Fotter = styled.footer``;

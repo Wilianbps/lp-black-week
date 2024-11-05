@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import backgroundImage from "../../assets/bg_incendio_roma.png";
+import backgroundImage from "../../assets/BG_incendio_em_roma.png";
 
 export const HomeContainer = styled.section`
   height: 100%;
@@ -44,14 +44,17 @@ export const Notice = styled.section`
       font-size: 1.125rem;
       font-weight: 700;
       cursor: pointer;
+      transition: all 0.5s ease;
+    }
+
+    a:hover {
+      opacity: 0.8;
     }
   }
 `;
 
 export const TextInfo = styled.section`
-  text-align: center;
   padding: 7rem 3rem;
-
   display: flex;
   flex-direction: column;
 
@@ -60,38 +63,59 @@ export const TextInfo = styled.section`
   background-position: center; /* Centraliza a imagem de fundo */
   background-repeat: no-repeat; /* Evita que a imagem se repita */
 
-  h3 {
-    margin: 0 auto;
-    color: #d80e0f;
-  }
-  .text {
+  section {
     max-width: 48rem;
     margin: 0 auto;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.625rem;
-    p {
-      color: #fff;
-      text-align: left;
-    }
-  }
 
-  a {
-    margin: 0 auto;
-    margin-top: 3.313rem;
-    text-decoration: none;
-    width: 430px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #469743;
-    color: #fff;
-    padding: 15px 15px;
-    border-radius: 50px;
-    font-size: 1.125rem;
-    font-weight: 700;
-    cursor: pointer;
+    h3 {
+      font-weight: bold;
+      font-size: 30px;
+      margin: 0 auto;
+      color: #d80e0f;
+    }
+
+    .text {
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.625rem;
+
+      span.bg-red {
+        padding: 0 0.5rem;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #9e1617;
+        color: #fff;
+        text-align: left;
+      }
+      p {
+        font-size: 18px;
+        color: #fff;
+        text-align: left;
+      }
+    }
+
+    a {
+      margin: 0 auto;
+      margin-top: 3.313rem;
+      text-decoration: none;
+      width: 430px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #469743;
+      color: #fff;
+      padding: 15px 15px;
+      border-radius: 50px;
+      font-size: 1.125rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
   }
 `;
 
@@ -114,7 +138,7 @@ export const CardContainer = styled.section`
     }
   }
 
-  section.cards{
+  section.cards {
     margin-top: 4.5rem;
     display: flex;
     justify-content: center;
@@ -128,17 +152,120 @@ export const CardContainer = styled.section`
       flex-direction: column;
       gap: 0.4rem;
 
-      li{
+      &.small-list {
+        margin-left: 2.5rem;
+      }
+
+      li {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         gap: 0.7rem;
         font-size: 12px;
 
-        span.bold{
+        span.bold {
           font-weight: bold;
         }
       }
     }
+  }
+`;
+
+export const InfoPersona = styled.section`
+  padding: 3rem;
+  max-width: 65rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+
+  section {
+    margin-top: 4rem;
+    header {
+      h2 {
+        color: #fff;
+        font-weight: 800;
+        font-size: 36px;
+      }
+    }
+
+    section {
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      p {
+        color: #fff;
+      }
+    }
+  }
+`;
+
+export const InfoDoubt = styled.section`
+  margin: 0 auto;
+  padding: 7rem;
+  max-width: 60rem;
+  color: #fff;
+
+  h4 {
+    text-align: left;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  p {
+    margin-top: 5.125rem;
+    margin-bottom: 1.438rem;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  span {
+    display: block;
+    font-size: 14px;
+  }
+
+  a {
+    display: block;
+    margin: 0 auto;
+    margin-top: 3.875rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #469743;
+    max-width: 37.313rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 0.5rem 3rem;
+    transition: all 0.5s ease;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+`;
+
+export const Footer = styled.footer`
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  color: #fff;
+  text-align: center;
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4.375rem;
+  }
+
+  p {
+    text-align: center;
+    .italic {
+      font-style: italic;
+    }
+  }
+
+  span {
+    display: block;
+    margin-top: 2rem;
+    font-size: 12px;
   }
 `;

@@ -16,7 +16,7 @@ export function Header() {
       <Container>
         <Content>
           <section>
-            <img src={logo} alt="Imagem do Guilherme Freire" />
+            <img src={logo} alt="Logo" />
             <p>
               22, 23 e 24 de Novembro |{" "}
               <span className="lighter-line">de R$497 </span>por R$29,90
@@ -33,7 +33,7 @@ export function Header() {
             <a href="">QUERO 90% DE DESCONTO</a>
           </section>
 
-          <img src={imagem} alt="Logo Imersão Crise e Virtude" />
+          <img src={imagem} alt="Imagem do Guilherme Freire" />
 
         </Content>
         <img className="faixa-black"src={faixaBlack} alt="" />

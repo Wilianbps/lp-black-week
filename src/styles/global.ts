@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-
+import 'tailwindcss/tailwind.css';
 export const GlobalStyle = createGlobalStyle`
 *{
   margin: 0;
